@@ -4,7 +4,10 @@ function hist() {
 }
 
 function macverm() {
-    
+    let msg = new SpeechSynthesisUtterance(
+        'Era uma vez um macaco vermelho, todo dia bem cedo...'
+    );
+    window.speechSynthesis.speak(msg);
 }
 
 // pag de exercícios de matematica
