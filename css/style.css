@@ -1,0 +1,25 @@
+
+body{
+    margin: auto;
+    text-align: center;
+    background: url("./img/minebg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+button{
+    font-size: 50px;
+    padding: 0px 70px 0px 70px;
+}
+ul li{
+    display: inline;
+    text-decoration: none;
+    padding: 0px 50px 0px 50px;
+}
+h1{
+    font-size: 200px;
+    text-shadow:
+    10px 0 5px aqua,
+    0 10px 5px aqua,
+    -10px 0 5px aqua,
+    0 -10px 5px aqua;
+}
