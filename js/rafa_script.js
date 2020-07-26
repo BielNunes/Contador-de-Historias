@@ -1,3 +1,13 @@
+
+// import time.sleep()
+function sleep(milliseconds) {
+    const date = Date.now();
+    let currentDate = null;
+    do {
+      currentDate = Date.now();
+    } while (currentDate - date < milliseconds);
+  }
+
 // pag de histórias
 function hist() {
     window.location = "hist.html"
@@ -6,7 +16,7 @@ function hist() {
 function macverm() {
     let msg = new SpeechSynthesisUtterance(
         'Era uma vez um macaco vermelho. Todo dia beem cedo '+
-        'ele acorda. Escova os dentes. Toma banho. E bota o uniforme '+
+        'ele acorda. Escóva os dentes. Toma banho. E bota o uniforme '+
         'da escola. Ele desce pra sala. Toma café da manhã. Dá tchau pra '+
         'mãe macaca, e vai pra escola. No caminho da escola, o macaco '+
         'vermelho encontra muitos amigos. Ele encontra o riiinocerooonte. '+
@@ -34,17 +44,17 @@ function macverm() {
     let pspspsmsg = new SpeechSynthesisUtterance(
         'Depois de comer, o macaco vermelho dá boa noite pra '+
         'todo mundo da família e sobe pro quarto dele. '+
-        'Ele escova os dentes. Toma um banho. Põe o pijama. '+
-        'E deita pra dormir. Boa noite, macaco vermelho.'
+        'Ele escóva os dentes. Toma um banho. Põe o pijama. '+
+        'E deita pra dormir. Boa noite, macaco vermelho. '
     );
     window.speechSynthesis.speak(msg);
-    setTimeout(() => {
-        window.speechSynthesis.speak(psmsg);
-        setTimeout(() => {
-            window.speechSynthesis.speak(pspsmsg);
-            setTimeout(() => { window.speechSynthesis.speak(pspspsmsg); }, 5000);
-        }, 5000);
-    }, 5000);
+    sleep(2000);
+    window.speechSynthesis.speak(psmsg);
+    sleep(2000);
+    window.speechSynthesis.speak(pspsmsg);
+    sleep(2000);
+    window.speechSynthesis.speak(pspspsmsg);
+    sleep(2000);
 }
 
 // pag de exercícios de matematica
