@@ -19,17 +19,17 @@ function macverm() {
         'ele acorda. Escóva os dentes. Toma banho. E bota o uniforme '+
         'da escola. Ele desce pra sala. Toma café da manhã. Dá tchau pra '+
         'mãe macaca, e vai pra escola. No caminho da escola, o macaco '+
-        'vermelho encontra muitos amigos. Ele encontra o riiinocerooonte. '+
-        'A giiiraafa. Que mais? '
+        'vermelho encontra muitos amigos. Ele encontra o rinoceronte. '+
+        'A girafa. Que mais? '
     );
     let psmsg = new SpeechSynthesisUtterance(
-        'Muuuitos amigos. Quando o macaco vermelho chega na escola. '+
-        'Ele estuda muuito. As professoras adoram o macaco vermelho, '+
+        'Muitos amigos. Quando o macaco vermelho chega na escola. '+
+        'Ele estuda muito. As professoras adoram o macaco vermelho, '+
         'porque o macaco vermelho gosta muito de assistir aula. Na hora '+
         'do recreio, o macaco vermelho come um lanche delicioso. '+
         'Um sanduiche de banana com suco de banana delicioso! O macaco '+
         'vermelho brinca de diversas brincadeiras no recreio. Ele brinca de '+
-        'fuutebool. De queimaaado. De piiique. Que mais? '
+        'futebol. De queimado. De pique. Que mais? '
     );
     let pspsmsg = new SpeechSynthesisUtterance(
         'Depois da escola, o macaco vermelho volta pra casa. '+
@@ -48,13 +48,13 @@ function macverm() {
         'E deita pra dormir. Boa noite, macaco vermelho. '
     );
     window.speechSynthesis.speak(msg);
-    sleep(2000);
+    sleep(5000);
     window.speechSynthesis.speak(psmsg);
-    sleep(2000);
+    sleep(5000);
     window.speechSynthesis.speak(pspsmsg);
-    sleep(2000);
+    sleep(5000);
     window.speechSynthesis.speak(pspspsmsg);
-    sleep(2000);
+    sleep(5000);
 }
 
 // pag de exercícios de matematica
