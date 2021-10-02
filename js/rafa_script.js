@@ -64,14 +64,14 @@ function mat() {
 
 function wrong() {
     let msg = new SpeechSynthesisUtterance(
-        'Xiiii, você errou Rafa...'
+        'Xiiii, você errou, Rafa...'
     );
     window.speechSynthesis.speak(msg);
 }
 
 function right() {
     let msg = new SpeechSynthesisUtterance(
-        'Aeeee, você acertou Rafa!'
+        'Aêêêê, você acertou. Rafa!'
     );
     window.speechSynthesis.speak(msg);
 }
